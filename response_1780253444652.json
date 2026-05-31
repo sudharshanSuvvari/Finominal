@@ -1,0 +1,19 @@
+{
+  "optimization_strategy": "risk_parity",
+  "allocation_changes": [
+    {
+      "ticker": "VEA",
+      "security_name": "Vanguard Developed Markets Index Fund;ETF",
+      "current_weight": 25,
+      "optimized_weight": 20.12,
+      "change": -4.88
+    },
+    {
+      "ticker": "AGG",
+      "security_name": "iShares Core US Aggregate Bond ETF",
+      "current_weight": 75,
+      "optimized_weight": 79.88,
+      "change": 4.88
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "optimization_strategy": "maximize_sharpe",
+  "allocation_changes": [
+    {
+      "ticker": "IEFA",
+      "security_name": "iShares Core MSCI EAFE ETF",
+      "current_weight": 20,
+      "optimized_weight": 0,
+      "change": -20
+    },
+    {
+      "ticker": "GLD",
+      "security_name": "SPDR Gold Shares",
+      "current_weight": 20,
+      "optimized_weight": 20.1,
+      "change": 0.1
+    },
+    {
+      "ticker": "AGG",
+      "security_name": "iShares Core US Aggregate Bond ETF",
+      "current_weight": 20,
+      "optimized_weight": 34.36,
+      "change": 14.36
+    },
+    {
+      "ticker": "SPY",
+      "security_name": "State Street SPDR S&P 500 ETF Trust",
+      "current_weight": 20,
+      "optimized_weight": 45.55,
+      "change": 25.55
+    },
+    {
+      "ticker": "VEA",
+      "security_name": "Vanguard Developed Markets Index Fund;ETF",
+      "current_weight": 20,
+      "optimized_weight": 0,
+      "change": -20
+    }
+  ]
+}

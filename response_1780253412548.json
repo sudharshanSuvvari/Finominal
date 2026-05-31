@@ -1,0 +1,19 @@
+{
+  "optimization_strategy": "equal_weights",
+  "allocation_changes": [
+    {
+      "ticker": "IEFA",
+      "security_name": "iShares Core MSCI EAFE ETF",
+      "current_weight": 25,
+      "optimized_weight": 50,
+      "change": 25
+    },
+    {
+      "ticker": "SPY",
+      "security_name": "State Street SPDR S&P 500 ETF Trust",
+      "current_weight": 75,
+      "optimized_weight": 50,
+      "change": -25
+    }
+  ]
+}

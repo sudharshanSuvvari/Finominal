@@ -1,0 +1,26 @@
+{
+  "optimization_strategy": "minimize_volatility",
+  "allocation_changes": [
+    {
+      "ticker": "GLD",
+      "security_name": "SPDR Gold Shares",
+      "current_weight": 10,
+      "optimized_weight": 1.86,
+      "change": -8.14
+    },
+    {
+      "ticker": "AGG",
+      "security_name": "iShares Core US Aggregate Bond ETF",
+      "current_weight": 30,
+      "optimized_weight": 91.21,
+      "change": 61.21
+    },
+    {
+      "ticker": "SPY",
+      "security_name": "State Street SPDR S&P 500 ETF Trust",
+      "current_weight": 60,
+      "optimized_weight": 6.92,
+      "change": -53.08
+    }
+  ]
+}
