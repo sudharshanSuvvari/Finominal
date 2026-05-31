@@ -1,0 +1,21 @@
+[project]
+name = "finominal-finance-API-assessment"
+version = "0.1.0"
+description = "FastAPI backend for optimiser API"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi==0.115.0",
+    "uvicorn[standard]==0.30.6",
+
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "scipy>=1.14.0",
+    "statsmodels>=0.14.4",
+    "openpyxl>=3.1.5",
+
+    "pydantic==2.9.2",
+    "pydantic-settings==2.5.2",
+
+    "structlog==24.4.0"
+]
