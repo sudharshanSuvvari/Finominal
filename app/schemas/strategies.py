@@ -1,7 +1,8 @@
 from typing import Literal
 
 from pydantic import BaseModel
-
+from pydantic import Field
+from typing_extensions import Annotated
 
 class PortfolioHolding(BaseModel):
     ticker: str
@@ -10,18 +11,18 @@ class PortfolioHolding(BaseModel):
 class OptimizationConstraints(
     BaseModel,
 ):
-    min_weight: float | None = None
-    max_weight: float | None = None
+    min_weight: Annotated[float, Field(ge=0, le=100, description="Minimum weight for any asset in the portfolio (in percentage).")]
+    max_weight: Annotated[float, Field(ge=10, le=100, description="Maximum weight for any asset in the portfolio (in percentage).")]
 
-    min_dividend_yield: float | None = None
+    min_dividend_yield: Annotated[float, Field(ge=0, le=100, description="Minimum dividend yield for any asset in the portfolio (in percentage).")]
 
-    min_cagr: float | None = None
+    min_cagr: Annotated[float, Field(ge=0, le=100, description="Minimum CAGR for any asset in the portfolio (in percentage)."   )]
 
-    max_drawdown: float | None = None
+    max_drawdown: Annotated[float, Field(ge=0, le=100, description="Maximum drawdown for any asset in the portfolio (in percentage).")]
 
-    min_volatility: float | None = None
-    max_volatility: float | None = None
-    
+    min_volatility: Annotated[float, Field(ge=0, le=100, description="Minimum volatility for any asset in the portfolio (in percentage).")]
+    max_volatility: Annotated[float, Field(ge=0, le=100, description="Maximum volatility for any asset in the portfolio (in percentage).")]
+
 class OptimizationRequest(BaseModel):
     holdings: list[PortfolioHolding]
     constraints: OptimizationConstraints | None = None
