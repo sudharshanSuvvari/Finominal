@@ -1,6 +1,6 @@
 # Project Name
 
-Brief description of the project, its purpose, and the business problem it solves.
+Assigmnet submission.
 
 ---
 
@@ -16,7 +16,6 @@ Verify installation:
 
 ```bash
 python --version
-mysql --version
 git --version
 ```
 
